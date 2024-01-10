@@ -1,0 +1,128 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Jura", sans-serif;
+}
+
+span {
+  color: aqua;
+}
+
+.copy-btn {
+  color: aqua;
+  border-radius: 50%;
+}
+
+.copy-btn:hover {
+  color: #212529;
+  background: aqua;
+}
+
+.gen-pass {
+  border-radius: 10px;
+  background: linear-gradient(145deg, #1e2125, #23282c);
+  box-shadow: 3px 3px 3px #0d0f10, -3px -3px 3px #353b42;
+  color: white;
+}
+
+.gen-pass:hover {
+  color: aqua;
+}
+
+.gen-pass:active {
+  border-radius: 10px;
+  background: #212529;
+  box-shadow: inset 3px 3px 3px #0d0f10, inset -3px -3px 3px #353b42;
+  outline: none;
+  color: rgb(0, 239, 239);
+  transition: 0.5s;
+}
+
+.input-text {
+  border-radius: 150px;
+  background: #212529;
+  box-shadow: inset 4px 4px 3px #0d0f10, inset -4px -4px 3px #353b42;
+}
+
+h1 {
+  font-size: 53px;
+  font-family: "Orbitron", sans-serif;
+  color: #353b42;
+  text-shadow: 2px 2px 6px aqua;
+  animation: glitch 1s linear infinite;
+}
+
+@keyframes glitch {
+  2%,
+  64% {
+    transform: translate(2px, 0) skew(0deg);
+  }
+  4%,
+  60% {
+    transform: translate(-2px, 0) skew(0deg);
+  }
+  62% {
+    transform: translate(0, 0) skew(5deg);
+  }
+}
+
+h1:before,
+h1:after {
+  content: attr(title);
+  position: absolute;
+  left: 0;
+}
+
+h1:before {
+  animation: glitchTop 1s linear infinite;
+  clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
+}
+
+@keyframes glitchTop {
+  2%,
+  64% {
+    transform: translate(2px, -2px);
+  }
+  4%,
+  60% {
+    transform: translate(-2px, 2px);
+  }
+  62% {
+    transform: translate(13px, -1px) skew(-13deg);
+  }
+}
+
+h1:after {
+  animation: glitchBottom 1.5s linear infinite;
+  clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
+  -webkit-clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
+}
+
+@keyframes glitchBottom {
+  2%,
+  64% {
+    transform: translate(-2px, 0);
+  }
+  4%,
+  60% {
+    transform: translate(-2px, 0);
+  }
+  62% {
+    transform: translate(-22px, 5px) skew(21deg);
+  }
+}
+
+.reference {
+  color: aqua;
+  font-size: 10px;
+  text-decoration: underline;
+}
+
+.ref-title {
+  color: aqua;
+  font-size: 10px;
+  margin-top: 200px;
+  background: #212529;
+  box-shadow: inset 4px 4px 3px #0d0f10, inset -4px -4px 3px #353b42;
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jura:wght@500&family=Orbitron:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="./icon.png" type="image/x-icon" />
+    <title>Cyber Keys</title>
+  </head>
+  <body class="bg-dark text-light">
+    <section>
+      <div class="container pt-sm-5">
+        <div class="row mt-sm-5 pt-5">
+          <div class="col-lg-4"></div>
+          <div
+            class="col-lg-4 d-flex flex-column justify-content-center align-items-center"
+          >
+            <h1 title="Cyber Keys">Cyber Keys</h1>
+            <h5 class="mt-5 text-center">
+              Generate a <span>Random Password</span> here...
+            </h5>
+            <div class="mt-5 input-text rounded-5 p-1">
+              <input
+                type="text"
+                name="text"
+                id="Password"
+                placeholder="Password"
+                class="bg-transparent border-0 px-3"
+                style="outline: none; color: aqua"
+              />
+              <button class="btn copy-btn" onclick="copy()">
+                <i class="bi bi-copy"></i>
+              </button>
+            </div>
+            <button class="gen-pass p-2 mt-5" onclick="createPass()">
+              <i class="bi bi-lightning"></i> Generate Password
+            </button>
+            <div class="ref-title p-2 px-3 rounded-5">
+              Made with &#10084; by
+              <a href="https://farid-ud-din.vercel.app/" class="reference"
+                >Farid ud din</a
+              >
+              for whole &#x1F30E;
+            </div>
+          </div>
+          <div class="col-lg-4"></div>
+        </div>
+      </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
